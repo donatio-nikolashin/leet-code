@@ -113,7 +113,7 @@ fn add_two_numbers_test_2() {
     assert_eq!(
         Solution::add_two_numbers(
             number_to_list_node(120),
-           number_to_list_node(12),
+            number_to_list_node(12),
         ),
         number_to_list_node(132)
     )

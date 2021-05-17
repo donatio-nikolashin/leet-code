@@ -4,11 +4,11 @@ pub struct Solution;
 
 impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
-        let mut indices:HashMap<i32, i32> = HashMap::new();
+        let mut indices: HashMap<i32, i32> = HashMap::new();
         for (index, element) in nums.iter().enumerate() {
             let diff = target - element;
             if indices.contains_key(&diff) {
-                return vec![*indices.get(&diff).unwrap(), index as i32]
+                return vec![*indices.get(&diff).unwrap(), index as i32];
             } else {
                 indices.insert(*element, index as i32);
             }
